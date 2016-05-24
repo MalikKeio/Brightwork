@@ -48,6 +48,9 @@ dim2_array[:2,:2]
 # 逆！
 dim2_array[0][::-1]
 
+# zeroしかないarrayを作成
+zeros = np.zeros((4, 5))
+
 # csvとして保存
 np.savetxt('lookatarray.csv', dim2_array, delimiter = ',')
 
