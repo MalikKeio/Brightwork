@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
 
+#### 冗談 ####
+from __future__ import braces
+import antigravity
+##### 完 ####
+
 class Date:
     # static変数の作り方：
     USE_COUNT = 0
@@ -85,3 +90,16 @@ class Date:
     @staticmethod
     def set_delimiter(new_delimiter):
         Date.DELIMITER = new_delimiter
+
+
+# splitとjoinを使用する例：URL parse実装
+url = "http://example.com/over/there?name=ferret&field1=value1&field2=value2&field3=value3"
+page_url, query = url.split("?")
+print(page_url, query)
+contents = query.split("&")
+print(contents)
+parsedQuery = {}
+for keyValuePair in contents:
+    key, value = keyValuePair.split("=")
+    parsedQuery[key] = value
+print(parsedQuery)
